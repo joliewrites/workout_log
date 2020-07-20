@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WorkoutLog</title>
+<!--     <title>WorkoutLog</title> -->
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand active nav brand"><%= link_to "Workout Log", root_path %></a>
+      </div>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
