@@ -14,6 +14,14 @@ class WorkoutsController < ApplicationController
     @workout = Workout.new
   end
 
+  def update
+    if @workout.update(workout_params)
+      redirect_to @workout
+    else
+      render 'edit'
+    end
+  end
+
   def create
     @workout = Workout.new(workout_params)
     if @workout.save
@@ -24,7 +32,8 @@ class WorkoutsController < ApplicationController
   end
 
   def destroy
-    @workout = Workout.destroy
+    @workout.destroy
+    redirect_to root_path
   end
 
   private
