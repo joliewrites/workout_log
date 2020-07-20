@@ -12,7 +12,10 @@
   <body>
     <div class="navbar">
       <div class="navbar-inner">
-        <a class="brand active nav brand"><%= link_to "Workout Log", root_path %></a>
+        <a class="brand active nav brand">
+          <%= link_to "Workout Log", root_path %>
+          <%= link_to "New Workout", new_workout_path %>
+          </a>
       </div>
     </div>
     <div class="container">
