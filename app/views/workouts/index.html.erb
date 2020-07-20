@@ -1,3 +1,8 @@
 <h1>
-  workouts index
+  Workouts Index
 </h1>
+
+<% @workouts.each do |workout| %>
+<h3><%= link_to workout.date, workout %></h3>
+<h4><%= workout.workout %></h4>
+<% end %>
