@@ -1,11 +1,11 @@
 <h1>
-  Workouts Index
+  Workouts Index 🏋
 </h1>
 
 <br>
 
 <% @workouts.each do |workout| %>
-<h3><%= link_to workout.date.strftime("%A %b %d"), workout %></h3>
+<h3><%= link_to workout.date.strftime("%A %b %d"), workout, :class => "h3-text" %></h3>
 <h4><%= workout.workout %></h4>
 <% end %>
 
