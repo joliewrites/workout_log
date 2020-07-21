@@ -3,11 +3,12 @@
 </h1>
 
 <br>
-
-<% @workouts.each do |workout| %>
-<h3><%= link_to workout.date.strftime("%A %b %d"), workout, :class => "h3-text" %></h3>
-<h4><%= workout.workout %></h4>
-<% end %>
+<div class="container">
+  <% @workouts.each do |workout| %>
+    <h3><%= link_to workout.date.strftime("%A %b %d"), workout, :class => "h3-text" %></h3>
+    <h4><%= workout.workout %></h4>
+  <% end %>
+</div>
 
 <br>
 <button type="button" class="btn btn-light">
