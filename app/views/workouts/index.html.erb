@@ -2,8 +2,14 @@
   Workouts Index
 </h1>
 
+<br>
+
 <% @workouts.each do |workout| %>
 <h3><%= link_to workout.date.strftime("%A %b %d"), workout %></h3>
 <h4><%= workout.workout %></h4>
-<h2><%= link_to "Log a workout", new_workout_path %></h2>
 <% end %>
+
+<br>
+<button type="button" class="btn btn-light">
+  <%= link_to "Log a workout", new_workout_path %>
+</button>

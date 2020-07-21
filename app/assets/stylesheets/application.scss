@@ -17,10 +17,13 @@
 
 
 // External libraries
+
 html {
   height: 100%;
   opacity: 0.9;
 }
+
+
 body {
 background: #7F7FD5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
@@ -33,6 +36,4 @@ background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ 
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.75);
 }
 
-h3 {
-  color: white;
-}
+
