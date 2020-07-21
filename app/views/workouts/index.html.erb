@@ -8,9 +8,11 @@
     <h3><%= link_to workout.date.strftime("%A %b %d"), workout, :class => "h3-text" %></h3>
     <h4><%= workout.workout %></h4>
   <% end %>
+
+  <button type="button" class="btn btn-light">
+  <%= link_to "Log a workout", new_workout_path %>
+  </button>
 </div>
 
 <br>
-<button type="button" class="btn btn-light">
-  <%= link_to "Log a workout", new_workout_path %>
-</button>
+

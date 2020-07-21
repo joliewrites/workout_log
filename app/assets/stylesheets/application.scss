@@ -26,10 +26,13 @@ html {
 
 h3 {
   font-weight: lighter;
+
 }
 
 h4 {
   font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 90%;
 }
 
 .h3-text {
@@ -48,4 +51,7 @@ background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ 
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.75);
 }
 
+.btn-light {
+  margin-top: 10px;
+}
 
