@@ -1,11 +1,9 @@
-
-<%= simple_form_for ([@workout, @workout.exercises.build]) do |f| %>
-  <p> What did you do?</p>
-  <%= f.input :name, label: false, input_html: { class: 'form-control' } %>
-  <p> How many sets? </p>
-  <%= f.input :sets, label: false, input_html: { class: 'form-control' } %>
-  <p> How many reps? </p>
-  <%= f.input :reps, label: false, input_html: { class: 'form-control' } %>
-  <%= f.button :submit %>
-  <br>
-<% end %>
+<div class="container">
+  <%= simple_form_for ([@workout, @workout.exercises.build]) do |f| %>
+    <%= f.input :name, label: false, placeholder: 'What did you do?', input_html: { class: 'form-control' } %>
+    <%= f.input :sets, label: false, placeholder: 'How many sets?', input_html: { class: 'form-control' } %>
+    <%= f.input :reps, label: false, placeholder: 'How many reps?', input_html: { class: 'form-control' } %>
+    <%= f.button :submit %>
+    <br>
+  <% end %>
+</div>
