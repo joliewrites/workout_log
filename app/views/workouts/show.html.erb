@@ -2,9 +2,9 @@
 
   <h1> My workout details </h1>
   <p class="h3-text"><%= @workout.date.strftime("%A %b %d") %></p>
-  <p> <%= @workout.workout %> </p>
-  <p> <%= @workout.mood %> </p>
-  <p> <%= @workout.length %> </p>
+  <p> <strong>Workout Type: </strong> <%= @workout.workout %> </p>
+  <p> <strong>Mood: </strong><%= @workout.mood %> </p>
+  <p> <strong>Duration: </strong><%= @workout.length %> </p>
 
   <h2>Exercises</h2>
   <%= render @workout.exercises, locals: {zone: @zone} %>
