@@ -1,4 +1,5 @@
 <div class="container">
+  <h3>Add an Exercise</h3>
   <%= simple_form_for ([@workout, @workout.exercises.build]) do |f| %>
     <%= f.input :name, label: false, placeholder: 'What did you do?', input_html: { class: 'form-control' } %>
     <%= f.input :sets, label: false, placeholder: 'How many sets?', input_html: { class: 'form-control' } %>

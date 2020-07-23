@@ -9,7 +9,7 @@
   <h2>Exercises</h2>
   <%= render @workout.exercises, locals: {zone: @zone} %>
   <br>
-  <h3>Add an Exercise</h3>
+
   <%= render "exercises/form", locals: {zone: @zone} %>
   <div class="flex">
     <div class="mr-5"><%= link_to "🔙", root_path  %></div>
