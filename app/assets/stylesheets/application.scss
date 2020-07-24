@@ -12,7 +12,9 @@
  *
  *= require_tree .
  *= require_self
+
  */@import "bootstrap";
+
 
 
 // Graphical variables
@@ -63,18 +65,22 @@ background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ 
   font-size: 12px;
   padding: 8px 50px;
   border-radius: 1px;
-  background: black;
+  background: #333399;
   transition: 0.3s ease;
   border-radius: 5px;
 }
 
-.workout-form {
-  border-radius: 5px;
-  width: 450px;
+.exercise-form {
+  border-radius: 10px;
+  width: 350px;
 }
 
-.column-1{
-  float: left;
-  width: 50%;
+.w-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #eee;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
