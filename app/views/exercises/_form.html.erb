@@ -1,4 +1,4 @@
-<div class="container exercise-form">
+<div class="container w-container exercise-form">
   <h3>Add an Exercise</h3>
   <%= simple_form_for ([@workout, @workout.exercises.build]) do |f| %>
     <%= f.input :name, label: false, placeholder: 'What did you do?', input_html: { class: 'form-control' } %>
