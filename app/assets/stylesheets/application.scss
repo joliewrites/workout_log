@@ -53,6 +53,11 @@ background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ 
   font-size: 25px;
 }
 
+
+.btn-light {
+  margin-top: 10px;
+}
+
 .my-button {
   color: white;
   font-size: 12px;
@@ -60,10 +65,7 @@ background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ 
   border-radius: 1px;
   background: black;
   transition: 0.3s ease;
-}
-
-.btn-light {
-  margin-top: 10px;
+  border-radius: 5px;
 }
 
 
