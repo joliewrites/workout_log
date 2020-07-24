@@ -1,11 +1,11 @@
 <div class="container w-container workout-form">
   <%= simple_form_for(@workout, html: { class: 'form-horizontal' }) do |f| %>
-    <%= f.input :date, label: false, input_html: { class: 'form-control' } %>
-    <p class="p-1"> Describe your workout </p>
+    <%= f.input :date, as: :date, label: false, input_html: { class: 'form-control' } %>
+    <p> Describe your workout </p>
     <%= f.input :workout, label: false, input_html: { class: 'form-control' } %>
     <%= f.input :mood, label: "How are you feeling?", :collection => %w[Fine☺️ Tired😰 Moody😤 Happy😊 Excited🎊 Lethargic😩 Annoyed🙄 Energetic⚡️ Strong🏋 Lazy😒 Sleepy😴], input_html: { class: 'form-control' } %>
     <%= f.input :length, label: "Workout duration", input_html: { class: 'form-control' } %>
-    <br>
+
     <%= f.button :submit, class: "my-button" %>
   <% end %>
 </div>
