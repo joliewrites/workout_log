@@ -93,6 +93,12 @@ background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ 
   position: relative; bottom: -9px;
 }
 
-.form-control{
+.form-control-1 {
   font-weight: bold;
+}
+
+.exercise-form {
+  position:relative;
+  right:230px;
+  bottom: 15px;
 }
